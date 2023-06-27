@@ -1,2 +1,3 @@
 # OpenFreightCore
-Collection of custom Swiftui
+
+A description of this package.
