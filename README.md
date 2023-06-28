@@ -1,3 +1,3 @@
 # OpenFreightCore
 
-A description of this package.
+Demo of my first package
