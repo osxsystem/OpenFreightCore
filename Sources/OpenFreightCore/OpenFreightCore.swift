@@ -8,7 +8,7 @@ public class OpenFreightCore {
   ///   - hexString: A 6-digits from the beginning of the string submitted here
   ///   - alpha: A number between 0.0 and 1.0 indicating how transparent the color is
   /// - Returns: A UIColor defined by the `hexString` params
-  public class func colorFromHex(_ hexString: String, alpha: CGFloat = 1.0) -> UIColor {
+  internal class func colorFromHex(_ hexString: String, alpha: CGFloat = 1.0) -> UIColor {
     let r, g, b: CGFloat
     let offset = hexString.hasPrefix("#") ? 1 : 0
     
@@ -24,5 +24,11 @@ public class OpenFreightCore {
       return UIColor(red: r, green: g, blue: b, alpha: alpha)
     }
     return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
+  }
+  
+  
+  /// the color that this module provide
+  public static var freightColor: UIColor {
+    return self.colorFromHex("006736")
   }
 }
