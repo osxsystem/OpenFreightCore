@@ -8,6 +8,8 @@
 import Foundation
 
 
-public struct OpenFreightCore {
-  
+extension OpenFreightCore {
+  public class Networking {
+    
+  }
 }

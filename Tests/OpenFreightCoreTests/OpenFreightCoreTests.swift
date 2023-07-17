@@ -5,13 +5,13 @@ final class OpenFreightCoreTests: XCTestCase {
  
   
   func testColorRedEqual() {
-    let color = OpenFreightCore.colorFromHex("FF0000")
+    let color = OpenFreightCore.Color.fromHex("FF0000")
     XCTAssertEqual(color, .red)
   }
   
   func testOpenFreightColorAreEqual() {
-    let color = OpenFreightCore.colorFromHex("006736")
-    XCTAssertEqual(color, OpenFreightCore.freightColor)
+    let color = OpenFreightCore.Color.fromHex("006736")
+    XCTAssertEqual(color, OpenFreightCore.Color.freightColor)
   }
   
   static var allTests = [
